@@ -1,3 +1,7 @@
+// essentially the fix is, wherever render is used in another function, basically whenever todos changes, 
+// within that function, util.store is called to update the todos array. 
+// this affects: toggleAll, destroyCompleted, create, toggle, update, destroy. 
+
 /*global jQuery, Handlebars, Router */
 jQuery(function ($) {
 	'use strict';
